@@ -1,0 +1,4 @@
+<app-search-character (newSearch)="getSearch($event)"></app-search-character>
+<app-character-list [characterItems]="dashboardItems" [searchData]="searchData" (newItemEvent)="addItem($event)"></app-character-list>
+<app-character-detail [characterData]="characterData"></app-character-detail>
+

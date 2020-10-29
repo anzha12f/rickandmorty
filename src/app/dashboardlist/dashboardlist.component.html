@@ -1,0 +1,24 @@
+<div class="container">
+<div class="row text-center mt-2">
+    <div
+      class="col-sm-4 productItem"
+      *ngFor="let product of dashboardItems; index as productId"
+    >
+      <figure>
+        <div class="fig1" id="spanhovering">
+          <a [routerLink]="['/rickDetail',productId]" [queryParams]="{ product: product | json }">
+            <img
+            class="img-responsive image"
+            src="{{ product.image }}"
+            width="250px"
+            height="200px"
+          /></a>
+
+          
+        </div>
+        </figure>
+
+       
+    </div>
+  </div>
+  </div>

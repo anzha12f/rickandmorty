@@ -1,0 +1,5 @@
+<div class="viewscroll container">
+<div *ngFor="let product of characterItems | appFilter: searchData; index as productId">
+<a [class.selected]="product.name === tempname"(click)="onSelect(product.name, product.image, product)">{{product.name}}</a>
+</div>
+</div>
